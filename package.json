@@ -1,0 +1,23 @@
+{
+  "name": "node-express-handlebars-bootstrap-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate i'm tired of writing over and over again",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-sequelize": "^0.7.0",
+    "sequelize": "^3.27.0",
+    "stripe": "^4.15.1"
+  }
+}

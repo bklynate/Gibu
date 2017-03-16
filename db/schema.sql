@@ -1,0 +1,10 @@
+-- CREATE DATABASE "put database name here";
+-- USE "put database name here";
+--
+-- CREATE TABLE " put table name here" (
+--   id INT NOT NULL AUTO_INCREMENT,      <----                     ]
+--   burger_name VARCHAR(60) NOT NULL,  <--- EXAMPLE OF A TABLE HERE ]
+--   devoured BOOLEAN DEFAULT FALSE,      <----                     ]
+--   date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--   PRIMARY KEY (id)
+-- );
