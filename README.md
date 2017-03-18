@@ -1,2 +1,2 @@
-# node-express-handlebars-bootstrap-boilerplate
-Boilerplate code for implementing a node/express/handlebars/boostrap application
+# Gibu - Commit yourself to giving
+An endownment SaaS application used to empower the ambitious.

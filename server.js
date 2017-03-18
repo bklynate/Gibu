@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const routes = require('./routes/router');
 const flash = require("connect-flash");
 const passport = require("passport");
-const LocalStrategy = require("passport-local");
+const passportConfig = require('./config/passport');
 const db = require('./models');
 
 app.use(bodyParser.json());
