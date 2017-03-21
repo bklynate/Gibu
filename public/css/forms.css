@@ -1,0 +1,16 @@
+.edit {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.nice-form {
+  max-width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+
+#username,
+#password {
+  width: 100%;
+}

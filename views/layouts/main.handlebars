@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Add title of project</title>
+    <title>Gibu - Empower others through your endownments</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/modernizr.custom.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
@@ -16,12 +19,42 @@
     <![endif]-->
   </head>
   <body>
+    <!-- Menu -->
+    <nav class="menu" id="theMenu">
+      <div class="menu-wrap">
+        <h1 class="logo"><a href="index.html#home">GIBU</a></h1>
+        <i class="fa fa-arrow-right menu-close"></i>
+        <a href="/">Home</a>
+        <a href="/signup">Signup</a>
+        <a href="/login">Login</a>
+        {{!-- <a href="">About</a>
+        <a href="#contact">Contact</a> --}}
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+      </div>
 
+      <!-- Menu button -->
+      <div id="menuToggle"><i class="fa fa-bars"></i></div>
+    </nav>
     <!-- Here goes your content! -->
     {{{body}}}
-
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+  	<script src="js/imagesloaded.js"></script>
+    <script src="js/classie.js"></script>
+  	<script src="js/AnimOnScroll.js"></script>
+  	<script>
+  		new AnimOnScroll( document.getElementById( 'grid' ), {
+  			minDuration : 0.4,
+  			maxDuration : 0.7,
+  			viewportFactor : 0.2
+  		});
+  	</script>
+    </body>
   </body>
 </html>

@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const routes = require('./routes/router');
-const flash = require("connect-flash");
-const passport = require("passport");
+const flash = require('connect-flash');
+const passport = require('passport');
 const passportConfig = require('./config/passport');
 const db = require('./models');
 
@@ -20,7 +20,6 @@ app.use(flash());
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
-console.log(db.User);
 //=============================
 //=====PASSPORT CONFIG=========
 //=============================
@@ -36,7 +35,7 @@ app.use(passport.session());
 //=========MIDDLEWARE==========
 //=============================
 app.use(function(request, response, next){
-  response.locals.currentUser = request.user;
+  response.locals.currentUser = request.username;
   response.locals.error = request.flash("error");
   response.locals.success = request.flash("success");
   next();
