@@ -35,7 +35,7 @@ app.use(passport.session());
 //=========MIDDLEWARE==========
 //=============================
 app.use(function(request, response, next){
-  response.locals.currentUser = request.username;
+  response.locals.currentUser = request.user;
   response.locals.error = request.flash("error");
   response.locals.success = request.flash("success");
   next();
