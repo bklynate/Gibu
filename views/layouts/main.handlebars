@@ -27,13 +27,27 @@
         <a href="/">Home</a>
         <a href="/signup">Signup</a>
         <a href="/login">Login</a>
+        {{#if currentUser}}
+        <a href="/dashboard">Dashboard</a>
+        {{/if}}
         {{!-- <a href="">About</a>
         <a href="#contact">Contact</a> --}}
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-dribbble"></i></a>
+        {{!-- <a href="#"><i class="fa fa-dribbble"></i></a> --}}
         <a href="#"><i class="fa fa-envelope"></i></a>
       </div>
+      {{!-- <div class="container">
+      <% if(error && error.length > 0) {%>
+      <div class="alert alert-danger" role="alert">
+        <%= error %>
+      </div>
+      <% } else if (success && success.length > 0){ %>
+      <div class="alert alert-success" role="alert">
+        <%= success %>
+      </div>
+      <% } %>
+    </div> --}}
 
       <!-- Menu button -->
       <div id="menuToggle"><i class="fa fa-bars"></i></div>
@@ -48,13 +62,13 @@
   	<script src="js/imagesloaded.js"></script>
     <script src="js/classie.js"></script>
   	<script src="js/AnimOnScroll.js"></script>
-  	<script>
+  	{{!-- <script>
   		new AnimOnScroll( document.getElementById( 'grid' ), {
   			minDuration : 0.4,
   			maxDuration : 0.7,
   			viewportFactor : 0.2
   		});
-  	</script>
+  	</script> --}}
     </body>
   </body>
 </html>

@@ -10,7 +10,17 @@
   margin-top: 20%;
 }
 
+.nice-form-campaign {
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+
 #username,
-#password {
+#password,
+#imageUrl,
+#campaignTitle,
+#description {
   width: 100%;
 }

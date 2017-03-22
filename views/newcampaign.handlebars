@@ -1,19 +1,37 @@
+<link rel="stylesheet" href="css/forms.css" />
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Create a new campaign </h1>
-      <form action="/signup" method="post">
-          <label>Campaign Title</label>
-          <input  id="campaignTitle" name="campaignTitle" placeholder="enter Gibu campaign title" type="text" />
-          <label>Campaign Image url</label>
-          <input id="imageUrl" name="imageUrl" placeholder="enter image url" type="text" >
-          <label>Campaign Description</label>
-          <input id="description" name="description" placeholder="enter campaign description" type="textarea" >
-          <div class="form-actions">
-              <button type="submit" class="">Sign Up</button>
-              <div class="clearfix"></div>
+      <div class="nice-form-campaign">
+        <h1>Create a new campaign </h1>
+        <form action="/newcampaign" method="post">
+          <div class="form-group">
+            <label for='campaign-title'>Campaign Title</label>
+            <input id="campaignTitle" name="campaignTitle" placeholder="enter Gibu campaign title" type="text" />
           </div>
-      </form>
+          <div class="form-group">
+            <label for='campaign-imageUrl'>Campaign Image url</label>
+            <input id="imageUrl" name="imageUrl" placeholder="enter image url" type="text">
+          </div>
+          <div class="form-group">
+            <label for="campaign-description">Campaign Description</label>
+            <textarea class="form-control" id="description" name="description" placeholder="enter campaign description" rows="5" id="comment"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
+{{!-- <form action="/authenticate" method="post" class="form-horizontal">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input id="username" name="username" placeholder="Username" type="text" />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input id="password" name="password" placeholder="Password" type="password" >
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> --}}
