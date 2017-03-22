@@ -3,14 +3,28 @@
     <div class="col-sm-12">
       <h1>Create a new campaign </h1>
       <form action="/signup" method="post">
-          <label>Campaign Title</label>
-          <input  id="campaignTitle" name="campaignTitle" placeholder="enter Gibu campaign title" type="text" />
-          <label>Campaign Image url</label>
-          <input id="imageUrl" name="imageUrl" placeholder="enter image url" type="text" >
-          <label>Campaign Description</label>
-          <input id="description" name="description" placeholder="enter campaign description" type="textarea" >
+          <div class="form-group">
+            <label>Campaign Title</label>
+            <br>
+            <input class="campaignInputs" id="campaignTitle" name="campaignTitle" placeholder="enter Gibu campaign title" type="text">
+          </div>
+          <div class="form-group">
+            <label>Include an image for your Campaign</label>
+             <br>
+            <input class="campaignInputs" id="imageUrl" name="imageUrl" placeholder="enter image url" type="text">
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea">Campaign Description</label>
+             <br>
+            <textarea class="campaignInputs" id="description" name="description" placeholder="enter campaign description" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label>How much do you want to raise?</label>
+             <br>
+            <input class="campaignInputs" id="amount" name="amount" placeholder="$" type="text">
+          </div>
           <div class="form-actions">
-              <button type="submit" class="">Sign Up</button>
+              <button type="submit" class="">Submit</button>
               <div class="clearfix"></div>
           </div>
       </form>

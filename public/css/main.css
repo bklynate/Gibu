@@ -558,3 +558,16 @@ hr {
   opacity: 1;
 }
 }
+
+.campaignInputs{
+  width: 500px;
+}
+
+.projectPhoto{
+  max-width: 200px;
+}
+
+.mainLogo {
+  animation-delay: 2s;
+  
+}
