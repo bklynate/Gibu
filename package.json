@@ -1,7 +1,7 @@
 {
-  "name": "node-express-handlebars-bootstrap-boilerplate",
+  "name": "gibu",
   "version": "1.0.0",
-  "description": "boilerplate i'm tired of writing over and over again",
+  "description": "A SaaS application for donations",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
