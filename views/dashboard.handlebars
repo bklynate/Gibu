@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-lg-5 col-lg-offset-1">
       <h1>Hi, <span class="username-text">{{{user.username}}}</span></h1>
-    </div>
+
 	<div class="col-lg-3 pull-right logoutButton">
 		<a href="/logout">Logout</a>
 	</div>
@@ -17,6 +17,12 @@
 	  		<a href="/newcampaign" class="newCampaignButton">Create a new campaign</a>
 	  </div>
   </div> <!-- end row -->
+
+    <div class="col-sm-12 text-center">
+      {{#each projects}}
+        <h2>{{this.name}}</h2>
+      {{/each}}
+    </div>
   <div class = "row">
   	<div class="col-lg-10 col-lg-offset-1">
   		<h2>My Projects </h2>

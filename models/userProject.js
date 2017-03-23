@@ -4,6 +4,6 @@ module.exports = function(sequelize, DataTypes) {
     stripe_charge: DataTypes.STRING,
     amount: DataTypes.INTEGER
   });
-  
+
   return UserProject;
 };
