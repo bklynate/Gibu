@@ -1,3 +1,7 @@
 .username-text {
   text-transform: capitalize;
 }
+
+body {
+	background-image: url(../imgs/dash2.png);
+}

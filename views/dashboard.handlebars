@@ -1,10 +1,51 @@
 <link rel="stylesheet" href="css/dashboard.css" />
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 text-center">
+    <div class="col-lg-5 col-lg-offset-1">
       <h1>Hi, <span class="username-text">{{{user.username}}}</span></h1>
-      <h1><a href="/logout">Logout</a></h1>
-      <h1><a href="/newcampaign">Create a new campaign</a></h1>
     </div>
-  </div>
+	<div class="col-lg-3 pull-right logoutButton">
+		<a href="/logout">Logout</a>
+	</div>
+  </div> <!-- end row -->
+  <div class="row">
+	  <div class="col-lg-5 col-lg-offset-1">
+	  	<img src="../imgs/user1.png" alt="UserPhoto" class="UserPhoto">
+	  </div>
+
+	  <div class="col-lg-5 col-lg-offset-1 center-block vertical-align">
+	  		<a href="/newcampaign" class="newCampaignButton">Create a new campaign</a>
+	  </div>
+  </div> <!-- end row -->
+  <div class = "row">
+  	<div class="col-lg-10 col-lg-offset-1">
+  		<h2>My Projects </h2>
+  	</div>
+  </div> <!-- end row -->
+  <div class = "row">
+  	<div class="col-lg-3 col-lg-offset-1">
+      <div class="center-text myProjectsDiv">
+        <h3>Feed the Cats</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
+        <p>Goal: $3,000</p>
+        <p>Raised: $1,000</p>
+      </div>	
+  	</div>
+  	<div class="col-lg-3 col-lg-offset-1">
+      <div class="center-text myProjectsDiv">
+        <h3>Feed the Cats</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
+        <p>Goal: $3,000</p>
+        <p>Raised: $1,000</p>
+      </div>	
+  	</div>
+  	<div class="col-lg-3 col-lg-offset-1">
+      <div class="center-text myProjectsDiv">
+        <h3>Feed the Cats</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
+        <p>Goal: $3,000</p>
+        <p>Raised: $1,000</p>
+      </div>	
+  	</div>
+  </div> <!-- end row -->
 </div>
