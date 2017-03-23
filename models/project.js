@@ -30,6 +30,14 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         notEmpty: true
       }
+    },
+    goal: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      defaultValue: 0,
+      validate: {
+        notEmpty: true
+      }
     }
   },
     // Here we'll pass a second "classMethods" object into the define method
