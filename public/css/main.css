@@ -62,7 +62,8 @@ hr {
   color: #fff;
   background-color: #1abc9c;
   border-color: #1abc9c;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 16px;
 }
 .btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
   color: #fff;
@@ -209,11 +210,11 @@ hr {
   transition: all .1s ease-in-out;
 }
 #headerwrap {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(../imgs/gibu2.jpg) no-repeat center top;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../imgs/gibu6.jpg) no-repeat center top;
   padding-top: 30px;
   text-align: center;
   background-attachment: relative;
-  min-height: 750px;
+  min-height: 725px;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -225,26 +226,28 @@ hr {
   background-size: cover;
 }
 #headerwrap h1 {
-  margin-top: 430px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   color: #fff;
-  font-size: 140px;
+  font-size: 160px;
   font-weight: 700;
   letter-spacing: 3px;
+  font-family: 'Pacifico', cursive;
   text-shadow: 4px 3px 0px #000, 9px 8px 0px rgba(0,0,0,0.15);
 }
 #headerwrap h2 {
   color: #fff;
-  font-size: 1.70vw;
-  font-weight: 100;
+  font-size: 70px;
+  font-weight: 700;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 5vh;
-  display: none;
+
 }
 #headerwrap i {
   font-size: 35px;
   color: #fff;
 }
+
+
 #headerwrap .spacer {
   /*margin-top: 220px; turned off*/
 }
@@ -568,11 +571,46 @@ hr {
   max-width: 200px;
 }
 
-.mainLogo {
+
+.outsideDiv1 {
+  animation-delay: .5s;
+}
+
+.insideDiv1 {
+  animation-delay: 1.5s;
+}
+
+.outsideDiv2 {
   animation-delay: 2s;
 }
 
-/*.homepage-hero-module {
+.insideDiv2 {
+  animation-delay: 3s;
+}
+.outsideDiv3 {
+  animation-delay: 3.5s;
+}
+
+.insideDiv3 {
+  animation-delay: 4.5s;
+}
+
+.outsideDiv4 {
+  animation-delay: 5s;
+}
+
+.insideDiv4 {
+  animation-delay: 6s;
+}
+
+.mainLogo {
+  animation-delay: 7s;
+}
+.headerSlogan{
+   animation-delay: 8s;
+}
+
+.homepage-hero-module {
     border-right: none;
     border-left: none;
     position: relative;
@@ -612,4 +650,16 @@ hr {
 }
 .video-container video.fillWidth {
     width: 100%;
-}*/
+}
+
+.aboutSection{
+  background-image: url(../imgs/tweed.png);
+  background-size: 100%;
+  color: #fff;
+}
+
+.aboutSection h1{
+  color: #fff;
+  padding-left: 20px;
+}
+
