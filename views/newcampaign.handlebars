@@ -2,36 +2,34 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <div class="nice-form-campaign">
-        <h1>Create a new campaign </h1>
-        <form action="/newcampaign" method="post">
+      <h1>Create a new campaign </h1>
+      <form action="/signup" method="post">
           <div class="form-group">
-            <label for='campaign-title'>Campaign Title</label>
-            <input id="campaignTitle" name="campaignTitle" placeholder="enter Gibu campaign title" type="text" />
+            <label>Campaign Title</label>
+            <br>
+            <input class="campaignInputs" id="campaignTitle" name="campaignTitle" placeholder="enter Gibu campaign title" type="text">
           </div>
           <div class="form-group">
-            <label for='campaign-imageUrl'>Campaign Image url</label>
-            <input id="imageUrl" name="imageUrl" placeholder="enter image url" type="text">
+            <label>Include an image for your Campaign</label>
+             <br>
+            <input class="campaignInputs" id="imageUrl" name="imageUrl" placeholder="enter image url" type="text">
           </div>
           <div class="form-group">
-            <label for="campaign-description">Campaign Description</label>
-            <textarea class="form-control" id="description" name="description" placeholder="enter campaign description" rows="5" id="comment"></textarea>
+            <label for="exampleTextarea">Campaign Description</label>
+             <br>
+            <textarea class="campaignInputs" id="description" name="description" placeholder="enter campaign description" rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <div class="form-group">
+            <label>How much do you want to raise?</label>
+             <br>
+            <input class="campaignInputs" id="amount" name="amount" placeholder="$" type="text">
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="">Submit</button>
+            <div class="clearfix"></div>
         </form>
       </div>
     </div>
   </div>
 </div>
 
-{{!-- <form action="/authenticate" method="post" class="form-horizontal">
-  <div class="form-group">
-    <label for="username">Username</label>
-    <input id="username" name="username" placeholder="Username" type="text" />
-  </div>
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input id="password" name="password" placeholder="Password" type="password" >
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form> --}}

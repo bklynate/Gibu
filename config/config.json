@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "bklynate",
-    "password": "",
-    "database": "c9",
+    "username": "root",
+    "password": "root",
+    "database": "donate_db",
     "host": "localhost",
     "dialect": "mysql"
   },
