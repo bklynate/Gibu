@@ -28,14 +28,14 @@ router.get('/signup', function(request, response) {
 });
 
 router.get('/dashboard', middleware.authenticated, function(request, response) {
-  db.User.findAll({
-    include: [{
-      model: db.Project
-    }]
+  db.Project.findAll({
+    where: {
+      UserId: request.user.id
+    }
   }).then(function(projects) {
     console.log('---------------------', projects)
     response.render('dashboard', {user: request.user,
-                                  projects});
+                                        projects});
   })
 });
 
@@ -47,7 +47,7 @@ router.post('/newcampaign', middleware.authenticated, function(request, response
   console.log("-------", request.campaignTitle);
   db.Project.find({where: {name: request.campaignTitle}}).then(function(project) {
     if (!project) {
-      db.Project.create({name: request.body.campaignTitle, imageUrl: request.body.imageUrl, description: request.body.description}).then(function(campaign){
+      db.Project.create({name: request.body.campaignTitle, imageUrl: request.body.imageUrl, description: request.body.description, UserId: request.user.id}).then(function(campaign){
         response.render('campaign', {campaign})
       })
       .catch(function(err) {
