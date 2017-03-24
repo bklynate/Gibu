@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../models');
 const passport = require('passport');
 const middleware = require('../config/middleware');
-const stripe = require('stripe')('pk_test_A8q8AtUuAinkLIzk1YrLGORq')
+const stripe = require('stripe')('sk_test_iQicrRnQSDDRRJlP5CJlwuaz')
 
 router.get('/', function(request, response) {
   response.render('index');
@@ -90,16 +90,41 @@ router.post('/signup', function(request, response) {
   });
 });
 
-router.post('/donate', middleware.authenticated, function(request, response) {
+router.post('/donate/:id', middleware.authenticated, function(request, response) {
   // db.Project.find({where: {id: request.id}}).then(function(project) {
   //   console.log('HEEEEEEEEEEEEEEY', project);
   //   response.redirect('/dashboard');
   // })
-  console.log(request.body);
-
-  // stripe.customers.create({
-  //
-  // })
+  // console.log('----START----');
+  // console.log(request.body);
+  // console.log('----END----');
+  let id = request.params.id;
+  console.log('-----params', request.body);
+  stripe.customers.create({
+    email: request.body.stripeEmail,
+    source: request.body.stripeToken
+  })
+  .then(customer =>
+    stripe.charges.create({
+      amount: 20000,
+      description: "Sample Charge",
+      currency: "usd",
+      customer: customer.id
+    }))
+  .then(function(item) {
+    db.Project.update(
+      {
+        donations: (parseInt(item.amount)/1000)
+      },
+      {
+        where: {
+          id: id
+        }
+      }
+    )
+  }).then(function() {
+    response.redirect('/dashboard')
+  });
 });
 
 module.exports = router;
