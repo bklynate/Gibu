@@ -6,8 +6,15 @@ const middleware = require('../config/middleware');
 const stripe = require('stripe')('sk_test_iQicrRnQSDDRRJlP5CJlwuaz')
 
 router.get('/', function(request, response) {
-  response.render('index');
-})
+  db.Project.findAll({
+    
+  }).then(function (projects) {
+    console.log('---------------------', projects)
+    newProjects = projects.filter((project) => project.id<=3)
+    // nearlyFunded = projects.filter((project) => (parseInt(project.donaions) / parseInt(project.goal)) > 0.9)
+    response.render('index', {projects: projects, newProjects});
+  })
+});
 
 router.post('/authenticate', passport.authenticate('local', {
   successRedirect: '/dashboard',
