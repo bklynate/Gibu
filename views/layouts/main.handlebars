@@ -26,11 +26,13 @@
         <h1 class="logo"><a href="index.html#home">GIBU</a></h1>
         <i class="fa fa-arrow-right menu-close"></i>
         <a href="/">Home</a>
-        <a href="/signup">Signup</a>
-        <a href="/login">Login</a>
-        {{#if currentUser}}
-        <a href="/dashboard">Dashboard</a>
-        {{/if}}
+        {{#unless currentUser}}
+          <a href="/signup">Signup</a>
+          <a href="/login">Login</a>
+        {{else}}
+          <a href="/dashboard">Dashboard</a>
+          <a href="/logout">Log out</a>
+        {{/unless}}
         {{!-- <a href="">About</a>
         <a href="#contact">Contact</a> --}}
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -63,13 +65,13 @@
   	<script src="js/imagesloaded.js"></script>
     <script src="js/classie.js"></script>
   	<script src="js/AnimOnScroll.js"></script>
-  	<script>
-  		new AnimOnScroll( document.getElementById( 'grid' ), {
-  			minDuration : 0.4,
-  			maxDuration : 0.7,
-  			viewportFactor : 0.2
-  		});
-  	</script>
     </body>
+    <script>
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      });
+    </script>
   </body>
 </html>

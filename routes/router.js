@@ -3,6 +3,7 @@ const router = express.Router();
 const db = require('../models');
 const passport = require('passport');
 const middleware = require('../config/middleware');
+const stripe = require('stripe')('pk_test_A8q8AtUuAinkLIzk1YrLGORq')
 
 router.get('/', function(request, response) {
   response.render('index');
@@ -47,7 +48,7 @@ router.post('/newcampaign', middleware.authenticated, function(request, response
   console.log("-------", request.campaignTitle);
   db.Project.find({where: {name: request.campaignTitle}}).then(function(project) {
     if (!project) {
-      db.Project.create({name: request.body.campaignTitle, imageUrl: request.body.imageUrl, description: request.body.description, UserId: request.user.id}).then(function(campaign){
+      db.Project.create({name: request.body.campaignTitle, imageUrl: request.body.imageUrl, description: request.body.description, UserId: request.user.id, goal: request.body.amount}).then(function(campaign){
         response.render('campaign', {campaign})
       })
       .catch(function(err) {
@@ -87,6 +88,18 @@ router.post('/signup', function(request, response) {
       });
     }
   });
+});
+
+router.post('/donate', middleware.authenticated, function(request, response) {
+  // db.Project.find({where: {id: request.id}}).then(function(project) {
+  //   console.log('HEEEEEEEEEEEEEEY', project);
+  //   response.redirect('/dashboard');
+  // })
+  console.log(request.body);
+
+  // stripe.customers.create({
+  //
+  // })
 });
 
 module.exports = router;
