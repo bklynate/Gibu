@@ -9,8 +9,7 @@ router.get('/', function(request, response) {
   db.Project.findAll({
     
   }).then(function (projects) {
-    console.log('---------------------', projects)
-    newProjects = projects.filter((project) => project.id<=3)
+    newProjects = projects.filter((project) => project.id > projects.length - 3)
     // nearlyFunded = projects.filter((project) => (parseInt(project.donaions) / parseInt(project.goal)) > 0.9)
     response.render('index', {projects: projects,
                                         newProjects});
