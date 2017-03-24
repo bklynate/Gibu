@@ -3,6 +3,7 @@ const router = express.Router();
 const db = require('../models');
 const passport = require('passport');
 const middleware = require('../config/middleware');
+const stripe = require('stripe')('pk_test_A8q8AtUuAinkLIzk1YrLGORq')
 
 router.get('/', function(request, response) {
   response.render('index');
@@ -87,6 +88,18 @@ router.post('/signup', function(request, response) {
       });
     }
   });
+});
+
+router.post('/donate', middleware.authenticated, function(request, response) {
+  // db.Project.find({where: {id: request.id}}).then(function(project) {
+  //   console.log('HEEEEEEEEEEEEEEY', project);
+  //   response.redirect('/dashboard');
+  // })
+  console.log(request.body);
+
+  // stripe.customers.create({
+  //
+  // })
 });
 
 module.exports = router;

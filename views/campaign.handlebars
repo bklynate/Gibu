@@ -5,7 +5,21 @@
       <h1>Welcome to the campaign page {{{campaign.campaignTitle}}}</h1>
       <h1>Welcome to the campaign page {{{campaign.imageUrl}}}</h1>
       <h1>Welcome to the campaign page {{{campaign.description}}}</h1>
-      {{{projects}}}
+      <div class="row">
+        <div class="col-sm-12">
+          <form action="/donate" method="POST">
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_A8q8AtUuAinkLIzk1YrLGORq"
+              data-amount="2000"
+              data-name="Gibu Donation"
+              data-description=" widgets"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-locale="auto">
+            </script>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>

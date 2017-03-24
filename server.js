@@ -10,6 +10,7 @@ const passport = require('passport');
 const passportConfig = require('./config/passport');
 const db = require('./models');
 
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
