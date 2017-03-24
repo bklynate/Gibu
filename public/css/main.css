@@ -701,7 +701,8 @@ hr {
 /*HEADERS*/
 
 .project-head {
-  font-weight: bold
+  font-weight: bold;
+  margin: 5px 0px 5px 0px;
 }
 
 
@@ -791,4 +792,14 @@ hr {
 
 .glyphicon-play-circle {
   font-size: 20px;
+}
+
+.well{
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.projectListingDiv {
+  padding: 0px;
 }
