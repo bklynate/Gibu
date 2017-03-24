@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f2f2;
+  background-color: #ecf0f1;
   font-family: Lato;
   font-weight: 300;
   font-size: 16px;
@@ -666,7 +666,9 @@ hr {
 .videoDiv {
   margin: 30px 0px 20px 0px;
 }
-
+/*.dashboardProjectsDiv{
+  background-color:#9b59b6;
+}*/
 .myProjectsDiv {
   background-color: #66d18f;
 }
@@ -688,4 +690,9 @@ hr {
 
 .UserPhoto {
   max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.campaignPhoto {
+  max-width: 300px;
 }

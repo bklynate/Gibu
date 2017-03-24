@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
+    "password": "",
     "database": "donate_db",
     "host": "localhost",
     "dialect": "mysql"

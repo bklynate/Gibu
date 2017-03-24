@@ -1,11 +1,24 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Welcome to the campaign page {{{campaign.id}}}</h1>
+{{!--       <h1>Welcome to the campaign page {{{campaign.id}}}</h1>
       <h1>Welcome to the campaign page {{{campaign.campaignTitle}}}</h1>
       <h1>Welcome to the campaign page {{{campaign.imageUrl}}}</h1>
       <h1>Welcome to the campaign page {{{campaign.description}}}</h1>
-      {{{projects}}}
+      {{{projects}}} --}}
+
+      
     </div>
   </div>
+  <div class="row">
+  	<div class = "col-lg-4 col-lg-offset-1">
+  		<h1>Welcome to the campaign page {{{campaign.campaignTitle}}}</h1>
+  	</div>
+  </div> <!-- end row -->
+
+  <div class="row">
+  	<div class = "col-lg-4 col-lg-offset-1">
+  		<img src="{{{campaign.imageUrl}}}" class="campaignPhoto">
+  	</div>
+  </div> <!-- end row -->
 </div>
