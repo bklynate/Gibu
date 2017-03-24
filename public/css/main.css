@@ -843,3 +843,6 @@ hr {
   font-size: 30px;
   font-weight: 700; 
 }
+.caption p {
+  margin-bottom: 0
+}

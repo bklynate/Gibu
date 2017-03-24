@@ -12,7 +12,8 @@ router.get('/', function(request, response) {
     console.log('---------------------', projects)
     newProjects = projects.filter((project) => project.id<=3)
     // nearlyFunded = projects.filter((project) => (parseInt(project.donaions) / parseInt(project.goal)) > 0.9)
-    response.render('index', {projects: projects, newProjects});
+    response.render('index', {projects: projects,
+                                        newProjects});
   })
 });
 
