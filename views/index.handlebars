@@ -38,98 +38,97 @@
   </div><!-- /container -->
 </div><!-- /headerwrap -->
 
-      <!-- FEATURED PROJECTS SECTION -->
-    <div id ="featured-projects" class="section-wrap">
-      <div class="container">
-        <div class="row">
-          <h2 class="project-head">Featured Projects:</h2>
-        </div>
+<!-- FEATURED PROJECTS SECTION -->
+<div id ="featured-projects" class="section-wrap">
+  <div class="container">
+    <div class="row">
+      <h2 class="project-head">Featured Projects:</h2>
+    </div>
 
-        <div class="row mt">
-          <ul class="grid effect-2" id="grid">
-            {{#each projects}}
-              <li>
-                <a href="/{{this.id}}">
-                  <div class="text-center thumbnail">
-                    <img src="{{this.imageUrl}}" alt="idk" class ="thumb-img">
-                    <div class="caption">
-                      <h3 class="thumb-head">{{this.name}}</h3>
-                      {{!--<p>{{this.description}}</p>--}}
-                      <p>${{this.goal}}</p>
-                      <p>Raised: $1,000</p>
-                    </div>  
-                  </div>
-                </a>
-              </li>
-            {{/each}}
-            
-          </ul>
-        </div><!-- row -->
-      </div><!-- container -->
-    </div><class- section-wrap -->
+    <div class="row mt">
+      <ul class="grid effect-2" id="grid">
 
-    {{!--<iframe width="630" height="472"
-src="https://www.youtube.com/embed/XGSy3_Czz8k" class="center-block">
-    </iframe>--}}
+        {{#each projects}}
+          <li>
+            <a href="/{{this.id}}">
+              <div class="text-center thumbnail">
+                <img src="{{this.imageUrl}}" alt="idk" class ="thumb-img">
+                <div class="caption">
+                  <h3 class="thumb-head">{{this.name}}</h3>
+                  {{!--<p>{{this.description}}</p>--}}
+                  <p>${{this.goal}}</p>
+                  <p>Raised: $1,000</p>
+                </div>  
+              </div>
+            </a>
+          </li>
+        {{/each}}
+        
+      </ul>
+    </div><!-- row -->
+  </div><!-- container -->
+</div> <!-- section-wrap -->
 
-          <!-- NEWEST PROJECTS: -->
-    <div id ="newest-projects" class="section-wrap">
-      <div class="container">
-        <div class="row">
-          <h2 class="project-head">Newest Projects:</h2>
-        </div>
+      <!-- NEWEST PROJECTS: -->
+<div id ="newest-projects" class="section-wrap">
+  <div class="container">
+    <div class="row">
+      <h2 class="project-head">Newest Projects:</h2>
+    </div>
 
-        <div class="row mt">
-          <ul class="grid effect-2" id="grid">
-            {{#each newProjects}}
-                <li>
-                  <a href="/{{this.id}}">
-                    <div class="text-center thumbnail">
-                      <img src="{{this.imageUrl}}" alt="idk" class ="thumb-img">
-                      <div class="caption">
-                        <h3 class="thumb-head">{{this.name}}</h3>
-                        {{!--<p>{{this.description}}</p>--}}
-                        <p>${{this.goal}}</p>
-                        <p>Raised: $1,000</p>
-                      </div>  
-                    </div>
-                  </a>
-                </li>
-            {{/each}}
-          </ul>
-        </div><!-- row -->
-      </div><!-- container -->
-    </div><class- section-wrap -->
+    <div class="row mt">
+      <ul class="grid effect-2" id="grid">
 
-    <!-- CLOSE TO FUNDING GOAL PROJECTS: -->
-    <div id ="nearly-funded" class="section-wrap">
-      <div class="container">
-        <div class="row">
-          <h2 class="project-head">Nearly Funded Projects:</h2>
-        </div>
+        {{#each newProjects}}
+            <li>
+              <a href="/{{this.id}}">
+                <div class="text-center thumbnail">
+                  <img src="{{this.imageUrl}}" alt="idk" class ="thumb-img">
+                  <div class="caption">
+                    <h3 class="thumb-head">{{this.name}}</h3>
+                    {{!--<p>{{this.description}}</p>--}}
+                    <p>${{this.goal}}</p>
+                    <p>Raised: $1,000</p>
+                  </div>  
+                </div>
+              </a>
+            </li>
+        {{/each}}
+        
+      </ul>
+    </div><!-- row -->
+  </div><!-- container -->
+</div><!-- section-wrap -->
 
-        <div class="row mt">
-          <ul class="grid effect-2" id="grid">
+<!-- CLOSE TO FUNDING GOAL PROJECTS: -->
+<div id ="nearly-funded" class="section-wrap">
+  <div class="container">
+    <div class="row">
+      <h2 class="project-head">Nearly Funded Projects:</h2>
+    </div>
 
-          </ul>
-        </div><!-- row -->
-      </div><!-- container -->
-    </div><class- section-wrap -->
+    <div class="row mt">
+      <ul class="grid effect-2" id="grid">
 
-  <!-- WELCOME SECTION -->
-    <div class="container-fluid">
-      <div class="row mt aboutSection">
-        <h1>About Gibu</h1>
-        <div class="col-lg-12 col-md-12">
-          <p>Gibu, was started by four young enterpreneurs seeking to further their education in the tech space. Gibu has a grown into a broad platform where users can fundraise for a variety of projects, while contributors can donate to their friends or support things they feel passionate about.</p>
-        </div>
-        <div class="col-lg-12 col-md-12">
-          <button type="button" class="btn btn-green center-block">Start Your Fundraising Campaign Now</button>
-        </div>
-        <div class="col-lg-12 col-md-12 text-center">
-          <br>
-            <p> Created by Nathan | Abanda | Jihyun | Igor | Asha </p>
+      </ul>
+    </div><!-- row -->
+  </div><!-- container -->
+</div><!-- section-wrap -->
 
-        </div>
-      </div><!-- /row -->
-    </div><!-- /.container -->
+<!-- WELCOME SECTION -->
+<div class="container-fluid">
+  <div class="row mt aboutSection">
+    <h1>About Gibu</h1>
+    <div class="col-lg-12 col-md-12">
+      <p>Gibu, was started by four young enterpreneurs seeking to further their education in the tech space. Gibu has a grown into a broad platform where users can fundraise for a variety of projects, while contributors can donate to their friends or support things they feel passionate about.</p>
+    </div>
+    <div class="col-lg-12 col-md-12">
+      <button type="button" class="btn btn-green center-block">Start Your Fundraising Campaign Now</button>
+    </div>
+    <div class="col-lg-12 col-md-12 text-center">
+      <br>
+        <p> Created by Nathan | Abanda | Jihyun | Igor | Asha </p>
+
+    </div>
+  </div><!-- row -->
+</div><!-- container -->

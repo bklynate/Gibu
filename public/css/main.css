@@ -663,9 +663,6 @@ hr {
   padding-left: 20px;
 }
 
-
-
-
 /*HEADERS*/
 
 .project-head {
@@ -709,4 +706,8 @@ hr {
 
 .thumb-head {
   font-weight: bold
+}
+
+.caption p {
+  margin-bottom: 0
 }
