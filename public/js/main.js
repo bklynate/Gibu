@@ -73,3 +73,21 @@ function scaleBannerVideoSize(element){
 
     });
 }
+
+//  modal
+
+$('.launch-modal').on('click', function(e){
+    e.preventDefault();
+    $('#modalplayer').attr("src","https://www.youtube.com/embed/tR6TXRMUmGs");
+    $( '#' + $(this).data('modal-id') ).modal();
+});
+
+$('#modal-video').on('hidden.bs.modal', function () {
+  $('#modalplayer').attr("src","");
+});
+
+$('.launch-modal').hover(function() {
+    $( this ).addClass('animated swing');
+  }, function() {
+    $( this ).removeClass('animated swing')
+});   
