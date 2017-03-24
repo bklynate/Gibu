@@ -91,13 +91,6 @@ router.post('/signup', function(request, response) {
 });
 
 router.post('/donate/:id', middleware.authenticated, function(request, response) {
-  // db.Project.find({where: {id: request.id}}).then(function(project) {
-  //   console.log('HEEEEEEEEEEEEEEY', project);
-  //   response.redirect('/dashboard');
-  // })
-  // console.log('----START----');
-  // console.log(request.body);
-  // console.log('----END----');
   let id = request.params.id;
   console.log('-----params', request.body);
   stripe.customers.create({
