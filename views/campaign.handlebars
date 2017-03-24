@@ -6,7 +6,20 @@
       <h1>Welcome to the campaign page {{{campaign.imageUrl}}}</h1>
       <h1>Welcome to the campaign page {{{campaign.description}}}</h1>
       {{{projects}}} --}}
+  <div class="row">
+  	<div class = "col-sm-11 col-sm-offset-1">
+  		<h1> Welcome to the campaign page </h1>
+  	</div>
+  </div> <!-- end row -->
 
+  <div class="row">
+  	<div class = "col-sm-5 col-sm-offset-1">
+  		<img src="{{campaign.imageUrl}}" class="campaignPhoto">
+  	</div>
+  	<div class = "col-sm-5 	left-block">
+  		<h2> {{campaign.name}} </h2>
+  	</div>
+  </div> <!-- end row -->
       
 
       <div class="row">
@@ -26,15 +39,6 @@
       </div>
     </div>
   </div>
-  <div class="row">
-  	<div class = "col-lg-4 col-lg-offset-1">
-  		<h1>Welcome to the campaign page {{{campaign.campaignTitle}}}</h1>
-  	</div>
-  </div> <!-- end row -->
+  
 
-  <div class="row">
-  	<div class = "col-lg-4 col-lg-offset-1">
-  		<img src="{{{campaign.imageUrl}}}" class="campaignPhoto">
-  	</div>
-  </div> <!-- end row -->
 </div>
