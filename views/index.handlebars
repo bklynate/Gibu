@@ -44,131 +44,83 @@
   </div>
 
       <!-- FEATURED PROJECTS SECTION -->
-    <div id="portfolio">
+    <div id ="featured-projects" class="section-wrap">
       <div class="container">
         <div class="row">
-          <h2 class="FeaturedProjects">Featured Projects:</h2>
+          <h2 class="project-head">Featured Projects:</h2>
         </div>
 
         <div class="row mt">
-        <ul class="grid effect-2" id="grid">
-
-          <li>
-            <div class="center-text">
-              <h3>Feed the Cats</h3>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-              <p>Goal: $3,000</p>
-              <p>Raised: $1,000</p>
-            </div>
-          </li>
-
-          <li>
-            <div class="center-text">
-              <h3>Feed the Cats</h3>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-              <p>Goal: $3,000</p>
-              <p>Raised: $1,000</p>
-            </div>
-          </li>
-
-          <li>
-            <div class="center-text">
-              <h3>Feed the Cats</h3>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-              <p>Goal: $3,000</p>
-              <p>Raised: $1,000</p>
-            </div>
-          </li>
-
-        </ul>
+          <ul class="grid effect-2" id="grid">
+            {{#each projects}}
+              <li>
+                <a href="/{{this.id}}">
+                  <div class="text-center thumbnail">
+                    <img src="{{this.imageUrl}}" alt="idk" class ="thumb-img">
+                    <div class="caption">
+                      <h3 class="thumb-head">{{this.name}}</h3>
+                      {{!--<p>{{this.description}}</p>--}}
+                      <p>${{this.goal}}</p>
+                      <p>Raised: $1,000</p>
+                    </div>  
+                  </div>
+                </a>
+              </li>
+            {{/each}}
+            
+          </ul>
         </div><!-- row -->
       </div><!-- container -->
-    </div><!-- portfolio -->
+    </div><class- section-wrap -->
+
+    {{!--<iframe width="630" height="472"
+src="https://www.youtube.com/embed/XGSy3_Czz8k" class="center-block">
+    </iframe>--}}
 
 
           <!-- NEWEST PROJECTS: -->
-    <div id="portfolio">
+    <div id ="newest-projects" class="section-wrap">
       <div class="container">
         <div class="row">
-          <h2 class="FeaturedProjects">Newest Projects:</h2>
+          <h2 class="project-head">Newest Projects:</h2>
+        </div>
+
+        <div class="row mt">
+          <ul class="grid effect-2" id="grid">
+            {{#each newProjects}}
+                <li>
+                  <a href="/{{this.id}}">
+                    <div class="text-center thumbnail">
+                      <img src="{{this.imageUrl}}" alt="idk" class ="thumb-img">
+                      <div class="caption">
+                        <h3 class="thumb-head">{{this.name}}</h3>
+                        {{!--<p>{{this.description}}</p>--}}
+                        <p>${{this.goal}}</p>
+                        <p>Raised: $1,000</p>
+                      </div>  
+                    </div>
+                  </a>
+                </li>
+            {{/each}}
+          </ul>
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><class- section-wrap -->
+
+    <!-- CLOSE TO FUNDING GOAL PROJECTS: -->
+    <div id ="nearly-funded" class="section-wrap">
+      <div class="container">
+        <div class="row">
+          <h2 class="project-head">Nearly Funded Projects:</h2>
         </div>
 
         <div class="row mt">
           <ul class="grid effect-2" id="grid">
 
-            <li>
-              <div class="center-text">
-                <h3>Feed the Cats</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-                <p>Goal: $3,000</p>
-                <p>Raised: $1,000</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="center-text">
-                <h3>Feed the Cats</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-                <p>Goal: $3,000</p>
-                <p>Raised: $1,000</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="center-text">
-                <h3>Feed the Cats</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-                <p>Goal: $3,000</p>
-                <p>Raised: $1,000</p>
-              </div>
-            </li>
-
           </ul>
         </div><!-- row -->
       </div><!-- container -->
-    </div><!-- portfolio -->
-
-          <!-- CLOSE TO FUNDING GOAL PROJECTS: -->
-    <div id="portfolio">
-      <div class="container">
-        <div class="row">
-          <h2 class="FeaturedProjects">Nearly Funded Projects:</h2>
-        </div>
-
-        <div class="row mt">
-          <ul class="grid effect-2" id="grid">
-
-            <li>
-              <div class="center-text">
-                <h3>Feed the Cats</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-                <p>Goal: $3,000</p>
-                <p>Raised: $1,000</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="center-text">
-                <h3>Feed the Cats</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-                <p>Goal: $3,000</p>
-                <p>Raised: $1,000</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="center-text">
-                <h3>Feed the Cats</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of </p>
-                <p>Goal: $3,000</p>
-                <p>Raised: $1,000</p>
-              </div>
-            </li>
-
-          </ul>
-        </div><!-- row -->
-      </div><!-- container -->
-    </div><!-- portfolio -->
+    </div><class- section-wrap -->
 
   <!-- WELCOME SECTION -->
     <div class="container-fluid">
