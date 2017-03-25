@@ -11,7 +11,7 @@ body {
   color: #555;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
-  margin-bottom: 220px
+  margin-bottom: 180px
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Raleway;
@@ -670,6 +670,10 @@ hr {
   padding-left: 20px;
 }
 
+.about-section p{
+margin-bottom: 0; 
+}
+
 /*HEADERS*/
 
 .project-head {
@@ -732,7 +736,7 @@ hr {
   width: 100%;
   margin-top: 20px;
   /* Set the fixed height of the footer here */
-  height: 220px
+  height: 180px
 }
 
 /*MODAL*/

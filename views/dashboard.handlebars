@@ -1,14 +1,28 @@
 <link rel="stylesheet" href="css/dashboard.css" />
 <div class="container">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Hi, <span class="username-text">{{user.username}}</span></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 class="project-head">My Projects</h2>
+      <div class="well">
+        {{#each projects}}
+        <div class="row clear">
+          <h2 class="pull-left"><a href="/{{id}}">{{name}}</a></h2>
+          <h2 class="pull-right">Goal: ${{goal}}</h2>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-sm-12 text-center">
-      <h1>Hi, <span class="username-text">{{user.username}}</span></h1>
-      <h1><a href="/logout">Logout</a></h1>
       <h1><a href="/newcampaign">Create a new campaign</a></h1>
-      
-      {{#each projects}}
-        <h2><a href="/{{this.id}}">{{this.name}}</a></h2>
-      {{/each}}
+      <p><a href="/logout">Logout</a></p>
     </div>
   </div>
 </div>

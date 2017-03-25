@@ -78,7 +78,7 @@ function scaleBannerVideoSize(element){
 
 $('.launch-modal').on('click', function (e) {
     e.preventDefault();
-    $('#modalplayer').attr("src", "https://www.youtube.com/embed/tR6TXRMUmGs");
+    $('#modalplayer').attr("src", "https://www.youtube.com/embed/a4a1YZj-wME");
     $('#' + $(this).data('modal-id')).modal();
 });
 
