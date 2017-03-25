@@ -1,27 +1,50 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Welcome to the campaign page {{campaign.id}}</h1>
-      <h1>Welcome to the campaign page {{campaign.campaignTitle}}</h1>
-      <h1>Welcome to the campaign page {{campaign.imageUrl}}</h1>
-      <h1>Welcome to the campaign page {{campaign.description}}</h1>
-      <h1>Welcome to the campaign page {{campaign.donations}}</h1>
-      <h1>Welcome to the campaign page {{campaign.goal}}</h1>
-      <div class="row">
-        <div class="col-sm-12">
-          <form action="/donate/{{campaign.id}}" method="POST">
-            <script
-              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-              data-key="pk_test_A8q8AtUuAinkLIzk1YrLGORq"
-              data-amount="2000"
-              data-name="Gibu Donation"
-              data-description="Give with your heart"
-              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-              data-locale="auto">
-            </script>
-          </form>
+      <h1 class="campaign-name">{{campaign.name}}</h1>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{campaign.imageUrl}}" alt="campaign picture" class="img-responsive">
+      </div>
+      <div class="col-md-8">
+        <div class="well">
+          <h2 class="project-head">Description</h2>
+          <p class="campaign-description">{{campaign.description}}</p>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="well">
+          <h2 class="project-head">Goal: ${{campaign.goal}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="well">
+          <h2 class="project-head">Raised: $1000</h2>
+        </div>
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form action="/donate/{{campaign.id}}" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_A8q8AtUuAinkLIzk1YrLGORq"
+            data-amount="2000"
+            data-name="Gibu Donation"
+            data-description="Give with your heart"
+            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+            data-locale="auto">
+          </script>
+        </form>
+      </div>
+    </div>
+
   </div>
 </div>

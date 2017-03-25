@@ -1,3 +1,8 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: Lato;
@@ -6,6 +11,7 @@ body {
   color: #555;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+  margin-bottom: 220px
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Raleway;
@@ -652,13 +658,14 @@ hr {
     width: 100%;
 }
 
-.aboutSection{
+.about-section{
   background-image: url(../imgs/tweed.png);
   background-size: 100%;
+  padding-top: 5px;
   color: #fff;
 }
 
-.aboutSection h1{
+.about-section h1{
   color: #fff;
   padding-left: 20px;
 }
@@ -710,4 +717,20 @@ hr {
 
 .caption p {
   margin-bottom: 0
+}
+
+/*CAMPAIGN PAGE*/
+
+.campaign-name {
+  font-weight: bold
+}
+
+/*STICKY FOOTER*/
+.sticky {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  /* Set the fixed height of the footer here */
+  height: 220px
 }
